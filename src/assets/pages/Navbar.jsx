@@ -7,7 +7,7 @@ const NavBar = () => {
 
   return (
     <nav className='bg-gray-900 p-4 text-white  flex justify-between fixed w-full top-0 z-10'>
-      <Link to="/navbar" className='text-xl font-bold'>Movie App</Link>
+      <Link to="/" className='text-xl font-bold'>Movie App</Link>
       <Link to="/WatchList" className='text-xl'>WatchList({WatchList.length})</Link>
     </nav>
   );

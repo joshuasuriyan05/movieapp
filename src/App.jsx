@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Navbar/>
         <Routes>
-          <Route path='/navbar' element={<Home/>} />
+          <Route path='/' element={<Home/>} />
           <Route path='/WatchList' element={<WatchList/>} />
         </Routes>
       </BrowserRouter>
