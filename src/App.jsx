@@ -1,4 +1,6 @@
 import React from 'react';
+import {FaHeart, FaRegHeart} from 'react-icons/fa';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 //import './App.css';
 import Navbar from './assets/pages/Navbar.jsx';
