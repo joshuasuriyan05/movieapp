@@ -3,8 +3,8 @@ import {FaHeart, FaRegHeart} from 'react-icons/fa';
 import {WatchListContext} from '../context/WatchListContext.jsx'
 import WatchList from '../pages/WatchList';
 const Moviecard = ({movie}) => {
-    const {watchlist, toggleWatchlist}= useContext (WatchListContext);
-    const inWatchList = watchlist.some((m) => m.id === movie.id);
+    const {WatchList, toggleWatchlist}= useContext (WatchListContext);
+    const inWatchList = WatchList.some((m) => m.id === movie.id);
 
     
 

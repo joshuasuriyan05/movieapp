@@ -1,13 +1,13 @@
 import React, { useContext, useState } from 'react'
-import NavBar from './NavBar.jsx';
+import Navbar from './Navbar.jsx';
 import Generes from '../components/Generes.jsx';
 import { WatchListContext } from '../context/WatchListContext.jsx';
 import Moviecard from '../components/Moviecard.jsx';
 const WatchList = () => {
-  const{watchlist, genrelist}= useContext(WatchListContext);
+  const{WatchList, genrelist}= useContext(WatchListContext);
   const [search, setSearch] = useState("");
   const [selectedGenre, setSelectedGenre] =useState("");
-  const filteredMovies = watchlist.filter((movie) => movie.title.toLowerCase().includes(search.toLowerCase())).filter((movie) => {
+  const filteredMovies = WatchList.filter((movie) => movie.title.toLowerCase().includes(search.toLowerCase())).filter((movie) => {
     return !selectedGenre || movie.genre_ids.includes(Number(selectedGenre));
   });
   return  (
