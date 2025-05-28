@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 //import './App.css';
-import NavBar from './assets/pages/NavBar.jsx';
+import Navbar from './assets/pages/Navbar.jsx';
 import Home from './assets/pages/Home.jsx';
 import WatchList from './assets/pages/WatchList.jsx';
 import Generes from './assets/components/Generes.jsx';
@@ -10,10 +10,10 @@ function App() {
   return (
     <WatchListProvider>
       <BrowserRouter>
-        <NavBar/>
+        <Navbar/>
         <Routes>
           <Route path='/navbar' element={<Home/>} />
-          <Route path='/watchlist' element={<WatchList/>} />
+          <Route path='/WatchList' element={<WatchList/>} />
         </Routes>
       </BrowserRouter>
     </WatchListProvider>
